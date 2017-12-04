@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1> 键盘 Event</h1>
+		<label>姓名:</label>
+		<input type="text" v-on:keyup.enter="logName">
+		<label>年龄:</label>
+		<input type="text" v-on:keyup.alt.enter="logAge">
+
+		<p>注：输入姓名后，按回车触发事件。输入年龄后按Alt+回车触发事件</p>
+	</div>
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+</html> 
