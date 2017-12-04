@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue.js</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1> Events </h1>
+		<button @click="add(1)">涨一岁</button>
+		<button v-on:click="subtract(1)">减一岁</button>
+		<button @dblclick="add(10)">涨十岁(双击)</button>
+		<button v-on:dblclick="subtract(10)">减十岁(双击)</button>
+		<p>My age is {{age}}</p>
+
+		<div id="canvas" v-on:mousemove=" ">
+			{{ x }},{{ y }}
+		</div>
+	</div>
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+</html> 
