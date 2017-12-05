@@ -1,7 +1,7 @@
 <!-- 1.模板：html解构 -->
 <template>
   <div id="app">
-    <app-header v-bind:title="title"></app-header>
+    <app-header v-on:titleChanged="updateTitle($event)" v-bind:title="title"></app-header>
     <users v-bind:users="users"></users>
     <users v-bind:users="users"></users>
     <app-footer v-bind:title="title"></app-footer>
@@ -34,6 +34,11 @@ export default {
         {name:"Henry",position:"web开发",show:false}
       ],
       title:"传递的是一个值，（number string boolean）"
+    }
+  },
+  methods:{
+    updateTitle(title){
+      this.title = title;
     }
   },
   components:{
