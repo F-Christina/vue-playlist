@@ -25,6 +25,8 @@ export default {
 </script>
 
 <!-- 3.样式：解决样式 -->
-<style>
-
+<style scoped>
+h1{
+  color:green;
+}
 </style>
