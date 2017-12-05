@@ -19,3 +19,11 @@ vue入门学习
 - [Vue-实战DEMO](https://github.com/F-Christina/vue-playlist/tree/master/Vue-%E5%AE%9E%E6%88%98DEMO)
 - [Vue-实例化多个Vue对象](https://github.com/F-Christina/vue-playlist/tree/master/Vue-%E5%AE%9E%E4%BE%8B%E5%8C%96%E5%A4%9A%E4%B8%AAVue%E5%AF%B9%E8%B1%A1)
 - [Vue-初识组件的应用](https://github.com/F-Christina/vue-playlist/tree/master/Vue-%E5%88%9D%E8%AF%86%E7%BB%84%E4%BB%B6%E7%9A%84%E5%BA%94%E7%94%A8)
+### CLI
+#### Vue CLI 脚手架
+- 脚手架是通过webpack搭建的开发环境
+- 使用ES6语法
+- 打包和压缩JS为一个文件
+- 项目文件在环境中编译，而不是在浏览器
+- 实现页面自动刷新
+[CLI](https://github.com/F-Christina/vue-playlist/tree/master/vue-playlist)
