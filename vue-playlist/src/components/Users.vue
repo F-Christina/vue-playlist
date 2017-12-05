@@ -13,21 +13,16 @@
 <script>
 export default {
   name: 'users',
+  //props:["users"], 属性传值的第一种写法（不严谨），下面是标准写法
+  props:{
+    users:{
+      type:Array,
+      required:true
+    }
+  }
   data () {
     return {
-      users:[
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false},
-      	{name:"Henry",position:"web开发",show:false}
-      ]
+      
     }
   }
 }
