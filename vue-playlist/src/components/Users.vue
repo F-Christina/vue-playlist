@@ -7,8 +7,17 @@
     		<h3 v-show="user.show">{{user.position}}</h3>
     	</li>
     </ul>
+
+    <button v-on:click="deleteUser">删除</button>
   </div>
 </template>
+
+
+<!-- 
+  传值：string number boolean
+  引用：array object
+-->
+
 
 <script>
 export default {
@@ -19,10 +28,15 @@ export default {
       type:Array,
       required:true
     }
-  }
+  },
   data () {
     return {
       
+    }
+  },
+  methods:{
+    deleteUser:function (){
+      this.users.pop();
     }
   }
 }
